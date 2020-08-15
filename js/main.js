@@ -209,19 +209,28 @@ document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 });
 document.onkeydown = function(e) {
-  if(event.keyCode == 123) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-     return false;
-  }
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-     return false;
-  }
-}
+        if(event.keyCode == 123) {
+            alert("Vaay F12 ile Inspecte mi girmeye çalışıyosun. Zekisin ama değilsin :)")
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            alert("Sen çok akıllısın di mi? CTRL+SHIFT+I ile olcak işler diil bebeim");
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+           alert("CTRL+SHIFT+C mi hahaha çok akıllısın ama ben daha akıllıyım")
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            alert("Inspecte girebileceğini mi sanıyorsun?")
+           return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            alert("Vaaay çok akıllısın, inspecte kısayolla giriyosun 👏 👏 👏")
+           return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'Q'.charCodeAt(0)) {
+            alert("Yer mi Anadolu çocuğuuu INSPECTE GIREMEZSIN")
+           return false;
+        }
+      }
