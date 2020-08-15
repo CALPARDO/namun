@@ -115,3 +115,93 @@ $(document).ready(function(){
       });   
 
  });
+
+
+(function ($) {
+    "use strict";
+
+    
+    /*==================================================================
+    [ Validate ]*/
+    var input = $('.validate-input .input100');
+
+    $('.validate-form').on('submit',function(){
+        var check = true;
+
+        for(var i=0; i<input.length; i++) {
+            if(validate(input[i]) == false){
+                showValidate(input[i]);
+                check=false;
+            }
+        }
+
+        return check;
+    });
+
+
+    $('.validate-form .input100').each(function(){
+        $(this).focus(function(){
+           hideValidate(this);
+        });
+    });
+
+    function validate (input) {
+        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                return false;
+            }
+        }
+        else {
+            if($(input).val().trim() == ''){
+                return false;
+            }
+        }
+    }
+
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+    
+    
+
+})(jQuery);
+
+function login(password) {
+    //non users
+    if (password === "") {
+        window.location.href = "http://sicanzi.com";
+    }
+    if (password === " ") {
+        window.location.href = "http://sicanzi.com";
+    }
+    if (password === "derin") {
+        window.location.href = "https://www.calpardo.com";
+    }
+    if (password === "arda") {
+        window.location.href = "https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmeet.google.com%2Ffam-vmjg-toq&sacu=1&hl=en_US&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin";
+    }
+    //users
+
+    //else
+    else {
+        console.log("Bruh")
+    }
+    }
+    function bruh() {
+        alert("\nUnutmicaktın Kardeşim \n\n\n Ok'a bas");
+        alert("\nÇok mu istiyosun şifreni");
+        alert("\nHadi yine iyisin :)");
+        alert("\nBuraya mail at, işte ben şuyum şifremi unuttum falan diye: durakderin@gmail.com ");
+        alert("\nYA DA");
+        alert("\nYA DA'sını söylemicem vazgeçtim KUDURR");
+        alert("\nAnladın sen napcanı");
+        alert("\nHadi bb");
+        }
