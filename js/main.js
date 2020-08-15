@@ -233,4 +233,24 @@ document.onkeydown = function(e) {
 	    alert("Yer mi Anadolu çocuğuuu INSPECTE GIREMEZSIN")
 	   return false;
 	 }
+	if(event.keyCode == 91 && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            alert("Sen çok akıllısın di mi? CTRL+SHIFT+I ile olcak işler diil bebeim");
+            return false;
+        }
+        if(event.keyCode == 91 && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+           alert("CTRL+SHIFT+C mi hahaha çok akıllısın ama ben daha akıllıyım")
+            return false;
+        }
+        if(event.keyCode == 91 && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            alert("Inspecte girebileceğini mi sanıyorsun?")
+           return false;
+        }
+        if(event.keyCode == 91 && e.keyCode == 'U'.charCodeAt(0)) {
+            alert("Vaaay çok akıllısın, inspecte kısayolla giriyosun 👏 👏 👏")
+           return false;
+        }
+        if(event.keyCode == 91 && e.shiftKey && e.keyCode == 'Q'.charCodeAt(0)) {
+            alert("Yer mi Anadolu çocuğuuu INSPECTE GIREMEZSIN")
+           return false;
+        }
 	}
