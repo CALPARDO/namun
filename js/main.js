@@ -204,3 +204,7 @@ function login(password) {
         alert("\nAnladın sen napcanı");
         alert("\nHadi bb");
         }
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
