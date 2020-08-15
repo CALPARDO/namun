@@ -41,7 +41,7 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick="login(document.getElementById('password').value)" onkeypress="login(document.getElementById('password').value)">
+						<button id="loginbtn" class="login100-form-btn" onclick="login(document.getElementById('password').value)" onkeypress="login(document.getElementById('password').value)">
 							Login
 						</button>
 					</div>
@@ -83,6 +83,15 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
+var input = document.getElementById("password");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("loginbtn").click();
+  }
+});
+</script>
 
 </body>
 </html>
