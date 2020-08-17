@@ -460,3 +460,34 @@ iframe {
     opacity: 1;
   }
 }
+
+body {
+  background: linear-gradient(71deg, #128bc2, #25cd79);
+  background-size: 400% 400%;
+
+  -webkit-animation: gradanimation 15s ease infinite;
+  -moz-animation: gradanimation 15s ease infinite;
+  -o-animation: gradanimation 15s ease infinite;
+  animation: gradanimation 15s ease infinite;
+}
+
+@-webkit-keyframes gradanimation {
+  0%{background-position:0% 2%}
+  50%{background-position:100% 99%}
+  100%{background-position:0% 2%}
+}
+@-moz-keyframes gradanimation {
+  0%{background-position:0% 2%}
+  50%{background-position:100% 99%}
+  100%{background-position:0% 2%}
+}
+@-o-keyframes gradanimation {
+  0%{background-position:0% 2%}
+  50%{background-position:100% 99%}
+  100%{background-position:0% 2%}
+}
+@keyframes gradanimation {
+  0%{background-position:0% 2%}
+  50%{background-position:100% 99%}
+  100%{background-position:0% 2%}
+}
